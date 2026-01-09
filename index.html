@@ -23853,6 +23853,86 @@ elit. Duis ut ligula leo aliquam suscipit.			</p>
         </div>
     </div>
 </div>
+
+<div style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 36px; color: #2c3e50; margin-bottom: 15px;">Get In Touch</h2>
+        <p style="color: #666; font-size: 18px; max-width: 600px; margin: 0 auto;">Have a project in mind? Let's discuss how we can bring your ideas to life.</p>
+    </div>
+    
+    <form style="max-width: 800px; margin: 0 auto;" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
+        <!-- Name & Email Row -->
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+            <div style="flex: 1; min-width: 250px;">
+                <label style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: 500;">Your Name</label>
+                <input type="text" placeholder="John Doe" required style="width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; transition: border 0.3s;">
+            </div>
+            
+            <div style="flex: 1; min-width: 250px;">
+                <label style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: 500;">Email Address</label>
+                <input type="email" placeholder="john@example.com" required style="width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; transition: border 0.3s;">
+            </div>
+        </div>
+        
+        <!-- Subject -->
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: 500;">Subject</label>
+            <input type="text" placeholder="Project Inquiry" required style="width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; transition: border 0.3s;">
+        </div>
+        
+        <!-- Message -->
+        <div style="margin-bottom: 30px;">
+            <label style="display: block; margin-bottom: 8px; color: #2c3e50; font-weight: 500;">Your Message</label>
+            <textarea placeholder="Tell me about your project..." required rows="6" style="width: 100%; padding: 14px 16px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; resize: vertical; transition: border 0.3s;"></textarea>
+        </div>
+        
+        <!-- Submit Button -->
+        <div style="text-align: center;">
+            <button type="submit" style="background: #2c3e50; color: white; border: none; padding: 16px 40px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: 600; transition: background 0.3s;">Send Message</button>
+        </div>
+        
+        <!-- Alternative Contact -->
+        <div style="text-align: center; margin-top: 40px; padding-top: 40px; border-top: 1px solid #eee;">
+            <p style="color: #666; margin-bottom: 15px;">Or reach out directly:</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="mailto:hello@example.com" style="color: #2c3e50; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 20px;">✉️</span> hello@example.com
+                </a>
+                <span style="color: #ddd;">•</span>
+                <a href="tel:+1234567890" style="color: #2c3e50; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 20px;">📱</span> +1 (234) 567-890
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+// Add hover effects
+document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.style.borderColor = '#2c3e50';
+            this.style.outline = 'none';
+        });
+        input.addEventListener('blur', function() {
+            this.style.borderColor = '#ddd';
+        });
+    });
+    
+    // Button hover effect
+    const submitBtn = document.querySelector('button[type="submit"]');
+    if(submitBtn) {
+        submitBtn.addEventListener('mouseenter', function() {
+            this.style.background = '#1a252f';
+        });
+        submitBtn.addEventListener('mouseleave', function() {
+            this.style.background = '#2c3e50';
+        });
+    }
+});
+</script>
 </div> <!-- close div.content_inner -->
 	</div>  <!-- close div.content -->
 					<footer class="edgtf-page-footer ">
